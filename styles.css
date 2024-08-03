@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container-btn-add {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#btn-add {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(37, 0, 85);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 500px;
+}
+
+#todo-list {
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+}
+#todo-list span {
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.delete-button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.toggle-button {
+  background-color: rgb(6, 0, 32);
+  margin-right: 10px;
+  color: black;
+}
+
+.card.completed span {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px; /* Grosor del tachado */
+  text-decoration-color: grey; /* Color del tachado */
+  color: black;
+}
