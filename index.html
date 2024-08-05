@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Mis Gastos</h1>
-    <div class="container-btn-add">
-      <button id="btn-add">Agregar Gastos</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Simulador de Ingresos y Gastos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Ingresos y Gastos</h1>
+        <div class="input-group">
+            <label for="ingresos">Ingresos:</label>
+            <input type="number" id="ingresos" placeholder="Ingrese su total de ingresos">
+        </div>
+        <div class="input-group">
+            <label for="nombre-gasto">Nombre del Gasto:</label>
+            <input type="text" id="nombre-gasto" placeholder="Nombre del gasto">
+        </div>
+        <div class="input-group">
+            <label for="cantidad-gasto">Cantidad del Gasto:</label>
+            <input type="number" id="cantidad-gasto" placeholder="Cantidad del gasto">
+        </div>
+        <button class="button" onclick="agregarGasto()">Agregar Gasto</button>
+        <h2>Gastos</h2>
+        <div id="lista-gastos"></div>
+        <div id="resultado">Saldo Final: $0</div>
     </div>
-    <ul id="todo-list"></ul>
-    <div class="card">
-      <h3>Total de Gastos</h3>
-      <span id="total-suma">$0.00</span>
-  </div>
-    <script src="proyecto.js"></script>
-  </body>
+    <script src="calculo.js"></script>
+</body>
 </html>
