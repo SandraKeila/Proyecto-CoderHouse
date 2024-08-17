@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Dashboard de Gastos e Ingresos</h1>
+        </header>
+        <div class="content">
+            <section class="card income-section">
+                <h2>Agregar Ingresos</h2>
+                <div class="input-group">
+                    <label for="income-name">Nombre del Ingreso</label>
+                    <input type="text" id="income-name" placeholder="Nombre del ingreso" />
+                </div>
+                <div class="input-group">
+                    <label for="income-amount">Cantidad</label>
+                    <input type="number" id="income-amount" placeholder="Cantidad" />
+                </div>
+                <button id="add-income">Agregar Ingreso</button>
+            </section>
+            <section class="card expense-section">
+                <h2>Agregar Gastos</h2>
+                <div class="input-group">
+                    <label for="expense-name">Nombre del Gasto</label>
+                    <input type="text" id="expense-name" placeholder="Nombre del gasto" />
+                </div>
+                <div class="input-group">
+                    <label for="expense-amount">Cantidad</label>
+                    <input type="number" id="expense-amount" placeholder="Cantidad" />
+                </div>
+                <button id="add-expense">Agregar Gasto</button>
+            </section>
+            <section class="card summary">
+                <h2>Resumen</h2>
+                <div class="summary-item">
+                    <h3>Gasto Total</h3>
+                    <p id="total-expenses">0</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Ingreso Total</h3>
+                    <p id="total-income">0</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Saldo Total</h3>
+                    <p id="total-amount">0</p>
+                </div>
+            </section>
+            <section class="card chart-container">
+                <h2>Gráfico de Gastos</h2>
+                <canvas id="expenses-chart"></canvas>
+            </section>
+            <section class="card income-list">
+                <h2>Lista de Ingresos</h2>
+                <ul id="income-items"></ul>
+            </section>
+            <section class="card expense-list">
+                <h2>Lista de Gastos</h2>
+                <ul id="expense-items"></ul>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="calculo.js"></script>
+</body>
+</html>
+

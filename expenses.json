@@ -1,0 +1,10 @@
+{
+    "incomes": [
+        {"name": "Salario", "amount": 3000},
+        {"name": "Freelance", "amount": 1200}
+    ],
+    "expenses": [
+        {"name": "Renta", "amount": 800},
+        {"name": "Comida", "amount": 300}
+    ]
+}
